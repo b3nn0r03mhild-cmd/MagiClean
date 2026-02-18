@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kessy Clean | Apartment Cleaning for Snow College Students</title>
+    <meta
+      name="description"
+      content="Apartment cleaning for Snow College students. $12/hour. View available times in the public Google Calendar and book an appointment online."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="nav container">
+        <a class="logo" href="#home">Kessy Clean</a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#availability">Availability</a></li>
+          <li><a href="#booking">Book</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero__content container">
+        <p class="tag">Apartment cleaning made simple for students</p>
+        <h1>Reliable cleaning for Snow College student apartments</h1>
+        <p>
+          Hi! I'm Kessy, an 18-year-old student from France. I mainly clean
+          apartments for Snow College students and help keep your space fresh,
+          tidy, and stress-free.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#booking">Book an appointment</a>
+          <a class="btn btn--ghost" href="#availability">See free times</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="pricing">
+        <h2>Simple Pricing</h2>
+        <article class="price-card">
+          <p class="price-label">Cleaning rate</p>
+          <p class="price">$12 / hour</p>
+          <p class="muted">No hidden fees. You only pay for booked hours.</p>
+        </article>
+      </section>
+
+      <section class="section section--alt" id="about">
+        <div class="container split">
+          <article class="card">
+            <h2>Who I am</h2>
+            <p>
+              I'm <strong>Kessy</strong>, an <strong>18-year-old student from France</strong>.
+              I offer friendly and affordable cleaning services with a focus on
+              student life needs.
+            </p>
+          </article>
+          <article class="card">
+            <h2>Who I help</h2>
+            <p>
+              I mainly clean <strong>apartments for Snow College students</strong>,
+              including routine cleans before guests, after busy weeks, or before
+              moving out.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="availability">
+        <h2>Available Times (Public Google Calendar)</h2>
+        <p class="section-intro">
+          Check my available slots in the calendar below. Then use the booking
+          form to request your appointment.
+        </p>
+
+        <div class="calendar-wrap">
+          <iframe
+            title="Kessy Clean Availability Calendar"
+            src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FDenver"
+            style="border: 0"
+            width="100%"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <p class="calendar-note">
+          Tip: Replace this demo calendar URL with your own public Google Calendar embed link.
+        </p>
+      </section>
+
+      <section class="section container" id="booking">
+        <h2>Book an Appointment</h2>
+        <p class="section-intro">
+          Fill in your details and preferred time. Your request is sent to the backend and stored in Google Sheets.
+        </p>
+
+        <form id="booking-form" class="booking-form" novalidate>
+          <div class="form-grid">
+            <label>
+              Full name
+              <input type="text" name="name" placeholder="Jane Doe" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="jane@email.com" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" placeholder="+1 435 000 0000" required />
+            </label>
+            <label>
+              Apartment address
+              <input type="text" name="address" placeholder="Street, City" required />
+            </label>
+            <label>
+              Preferred date
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              Preferred time
+              <input type="time" name="time" required />
+            </label>
+            <label>
+              Estimated hours
+              <input type="number" min="1" max="10" name="hours" value="2" required />
+            </label>
+          </div>
+
+          <label>
+            Notes
+            <textarea
+              name="notes"
+              rows="4"
+              placeholder="Anything special to clean?"
+            ></textarea>
+          </label>
+
+          <button class="btn btn--primary" type="submit">Send booking request</button>
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+        </form>
+
+        <div class="bookings">
+          <h3>Recent requests sent from this device</h3>
+          <ul id="booking-list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container footer__content">
+        <div>
+          <h3>Kessy Clean</h3>
+          <p>Apartment cleaning focused on Snow College students.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Email: kessyclean@example.com</p>
+          <p>Location: Snow College area</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
