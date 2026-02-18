@@ -3,26 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kessy Clean | Apartment Cleaning for Snow College Students</title>
+    <title>MagiClean | Apartment Cleaning for Snow College Students</title>
     <meta
       name="description"
-      content="Apartment cleaning for Snow College students. $12/hour. View available times in the public Google Calendar and book an appointment online."
+      content="MagiClean offers affordable apartment cleaning for Snow College students. View available times in our Google Calendar and book online."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="hero" id="home">
       <nav class="nav container">
-        <a class="logo" href="#home">Kessy Clean</a>
+        <a class="logo" href="#home">MagiClean</a>
         <ul>
-          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#why-choose">Why choose us</a></li>
           <li><a href="#availability">Availability</a></li>
           <li><a href="#booking">Book</a></li>
         </ul>
       </nav>
 
       <div class="hero__content container">
+        <img class="brand-logo" src="assets/magiclean-logo.svg" alt="MagiClean logo" />
         <p class="tag">Apartment cleaning made simple for students</p>
         <h1>Reliable cleaning for Snow College student apartments</h1>
         <p>
@@ -38,33 +40,39 @@
     </header>
 
     <main>
-      <section class="section container" id="pricing">
-        <h2>Simple Pricing</h2>
-        <article class="price-card">
-          <p class="price-label">Cleaning rate</p>
-          <p class="price">$12 / hour</p>
-          <p class="muted">No hidden fees. You only pay for booked hours.</p>
-        </article>
+      <section class="section container" id="services">
+        <h2>Services offered</h2>
+        <div class="grid grid--services">
+          <article class="card"><p>General apartment cleaning</p></article>
+          <article class="card"><p>Mirrors cleaning</p></article>
+          <article class="card"><p>Bathroom cleaning</p></article>
+          <article class="card"><p>Kitchen cleaning</p></article>
+          <article class="card"><p>Bedroom tidy & surface cleaning</p></article>
+          <article class="card"><p>Vacuuming & mopping</p></article>
+          <article class="card"><p>Trash removal</p></article>
+        </div>
       </section>
 
-      <section class="section section--alt" id="about">
-        <div class="container split">
-          <article class="card">
-            <h2>Who I am</h2>
-            <p>
-              I'm <strong>Kessy</strong>, an <strong>18-year-old student from France</strong>.
-              I offer friendly and affordable cleaning services with a focus on
-              student life needs.
-            </p>
+      <section class="section container" id="pricing">
+        <h2>Simple Pricing</h2>
+        <div class="price-wrap">
+          <article class="price-card">
+            <p class="price-label">Cleaning rate</p>
+            <p class="price">$12 / hour</p>
+            <p class="muted">No hidden fees. You only pay for booked hours.</p>
           </article>
-          <article class="card">
-            <h2>Who I help</h2>
-            <p>
-              I mainly clean <strong>apartments for Snow College students</strong>,
-              including routine cleans before guests, after busy weeks, or before
-              moving out.
-            </p>
-          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="why-choose">
+        <div class="container">
+          <h2>Why choose MagiClean?</h2>
+          <ul class="benefit-list">
+            <li>Flexible & student-friendly scheduling</li>
+            <li>Affordable prices</li>
+            <li>Respect for your privacy (you don't need to be home)</li>
+            <li>Fast, reliable and stress-free</li>
+          </ul>
         </div>
       </section>
 
@@ -77,8 +85,8 @@
 
         <div class="calendar-wrap">
           <iframe
-            title="Kessy Clean Availability Calendar"
-            src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FDenver"
+            title="MagiClean Availability Calendar"
+            src="https://calendar.google.com/calendar/embed?src=magicstudentclean%40gmail.com&ctz=America%2FDenver"
             style="border: 0"
             width="100%"
             height="600"
@@ -86,9 +94,6 @@
             scrolling="no"
           ></iframe>
         </div>
-        <p class="calendar-note">
-          Tip: Replace this demo calendar URL with your own public Google Calendar embed link.
-        </p>
       </section>
 
       <section class="section container" id="booking">
@@ -152,13 +157,25 @@
     <footer class="footer" id="contact">
       <div class="container footer__content">
         <div>
-          <h3>Kessy Clean</h3>
+          <h3>MagiClean</h3>
           <p>Apartment cleaning focused on Snow College students.</p>
         </div>
         <div>
           <h4>Contact</h4>
-          <p>Email: kessyclean@example.com</p>
+          <p>Email: magicstudentclean@gmail.com</p>
           <p>Location: Snow College area</p>
+        </div>
+        <div>
+          <h4>Instagram</h4>
+          <a
+            class="instagram-link"
+            href="https://www.instagram.com/magiclean.snowcollege?igsh=MTl0ZW5lemZvbWZpZQ=="
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open MagiClean Instagram"
+          >
+            <img src="assets/instagram-icon.svg" alt="Instagram" width="48" height="48" />
+          </a>
         </div>
       </div>
     </footer>

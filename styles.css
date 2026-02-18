@@ -43,6 +43,7 @@ body {
   gap: 1rem;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .nav a {
@@ -58,7 +59,14 @@ body {
 
 .hero__content {
   max-width: 760px;
-  padding: 2rem 0 1rem;
+  padding: 1.4rem 0 1rem;
+}
+
+.brand-logo {
+  width: min(420px, 100%);
+  height: auto;
+  display: block;
+  margin-bottom: 0.8rem;
 }
 
 .tag {
@@ -126,14 +134,29 @@ h2 {
   padding: 1rem;
 }
 
-.split {
+.grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(260px, 1fr));
   gap: 1rem;
+}
+
+.grid--services {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.grid--services .card p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.price-wrap {
+  display: flex;
+  justify-content: center;
 }
 
 .price-card {
   max-width: 400px;
+  width: 100%;
+  text-align: center;
 }
 
 .price-label {
@@ -148,15 +171,19 @@ h2 {
   font-weight: 800;
 }
 
+.benefit-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.benefit-list li {
+  margin-bottom: 0.4rem;
+}
+
 .muted,
 .section-intro,
 .calendar-note {
   color: var(--muted);
-}
-
-.calendar-note {
-  margin-top: 0.7rem;
-  font-size: 0.95rem;
 }
 
 .form-grid {
@@ -219,15 +246,22 @@ textarea:focus {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
+  align-items: center;
+}
+
+.instagram-link {
+  display: inline-flex;
+  border-radius: 12px;
+}
+
+.instagram-link img {
+  width: 52px;
+  height: 52px;
 }
 
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
     gap: 0.8rem;
-  }
-
-  .split {
-    grid-template-columns: 1fr;
   }
 }
