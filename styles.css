@@ -55,18 +55,21 @@ body {
 .logo {
   color: var(--primary);
   font-size: 1.3rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo-round {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
 }
 
 .hero__content {
   max-width: 760px;
   padding: 1.4rem 0 1rem;
-}
-
-.brand-logo {
-  width: min(420px, 100%);
-  height: auto;
-  display: block;
-  margin-bottom: 0.8rem;
 }
 
 .tag {
@@ -134,28 +137,23 @@ h2 {
   padding: 1rem;
 }
 
-.grid {
-  display: grid;
-  gap: 1rem;
-}
-
-.grid--services {
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-}
-
-.grid--services .card p {
+.services-box ul {
   margin: 0;
-  font-weight: 600;
+  padding-left: 1.2rem;
 }
 
-.price-wrap {
-  display: flex;
-  justify-content: center;
+.services-box li {
+  margin-bottom: 0.45rem;
+}
+
+.choose-pricing-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: stretch;
 }
 
 .price-card {
-  max-width: 400px;
-  width: 100%;
   text-align: center;
 }
 
@@ -181,8 +179,7 @@ h2 {
 }
 
 .muted,
-.section-intro,
-.calendar-note {
+.section-intro {
   color: var(--muted);
 }
 
@@ -257,6 +254,12 @@ textarea:focus {
 .instagram-link img {
   width: 52px;
   height: 52px;
+}
+
+@media (max-width: 900px) {
+  .choose-pricing-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {

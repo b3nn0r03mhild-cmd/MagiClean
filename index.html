@@ -13,10 +13,13 @@
   <body>
     <header class="hero" id="home">
       <nav class="nav container">
-        <a class="logo" href="#home">MagiClean</a>
+        <a class="logo" href="#home" aria-label="MagiClean Home">
+          <img class="logo-round" src="assets/magiclean-round-logo.svg" alt="MagiClean logo" />
+          <span>MagiClean</span>
+        </a>
         <ul>
           <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#why-choose">Pricing</a></li>
           <li><a href="#why-choose">Why choose us</a></li>
           <li><a href="#availability">Availability</a></li>
           <li><a href="#booking">Book</a></li>
@@ -24,7 +27,6 @@
       </nav>
 
       <div class="hero__content container">
-        <img class="brand-logo" src="assets/magiclean-logo.svg" alt="MagiClean logo" />
         <p class="tag">Apartment cleaning made simple for students</p>
         <h1>Reliable cleaning for Snow College student apartments</h1>
         <p>
@@ -42,21 +44,33 @@
     <main>
       <section class="section container" id="services">
         <h2>Services offered</h2>
-        <div class="grid grid--services">
-          <article class="card"><p>General apartment cleaning</p></article>
-          <article class="card"><p>Mirrors cleaning</p></article>
-          <article class="card"><p>Bathroom cleaning</p></article>
-          <article class="card"><p>Kitchen cleaning</p></article>
-          <article class="card"><p>Bedroom tidy & surface cleaning</p></article>
-          <article class="card"><p>Vacuuming & mopping</p></article>
-          <article class="card"><p>Trash removal</p></article>
-        </div>
+        <article class="card services-box">
+          <ul>
+            <li>General apartment cleaning</li>
+            <li>Mirrors cleaning</li>
+            <li>Bathroom cleaning</li>
+            <li>Kitchen cleaning</li>
+            <li>Bedroom tidy & surface cleaning</li>
+            <li>Vacuuming & mopping</li>
+            <li>Trash removal</li>
+          </ul>
+        </article>
       </section>
 
-      <section class="section container" id="pricing">
-        <h2>Simple Pricing</h2>
-        <div class="price-wrap">
-          <article class="price-card">
+      <section class="section section--alt" id="why-choose">
+        <div class="container choose-pricing-grid">
+          <article class="card">
+            <h2>Why choose MagiClean?</h2>
+            <ul class="benefit-list">
+              <li>Flexible & student-friendly scheduling</li>
+              <li>Affordable prices</li>
+              <li>Respect for your privacy (you don't need to be home)</li>
+              <li>Fast, reliable and stress-free</li>
+            </ul>
+          </article>
+
+          <article class="price-card" id="pricing">
+            <h2>Simple Pricing</h2>
             <p class="price-label">Cleaning rate</p>
             <p class="price">$12 / hour</p>
             <p class="muted">No hidden fees. You only pay for booked hours.</p>
@@ -64,20 +78,8 @@
         </div>
       </section>
 
-      <section class="section section--alt" id="why-choose">
-        <div class="container">
-          <h2>Why choose MagiClean?</h2>
-          <ul class="benefit-list">
-            <li>Flexible & student-friendly scheduling</li>
-            <li>Affordable prices</li>
-            <li>Respect for your privacy (you don't need to be home)</li>
-            <li>Fast, reliable and stress-free</li>
-          </ul>
-        </div>
-      </section>
-
       <section class="section container" id="availability">
-        <h2>Available Times (Public Google Calendar)</h2>
+        <h2>Available Times</h2>
         <p class="section-intro">
           Check my available slots in the calendar below. Then use the booking
           form to request your appointment.
