@@ -19,7 +19,7 @@
           <li><a href="#why-choose">Pricing</a></li>
           <li><a href="#why-choose">Why choose us</a></li>
           <li><a href="#availability">Availability</a></li>
-          <li><a href="#booking">Book</a></li>
+          <li><a href="#availability">Book</a></li>
         </ul>
       </nav>
 
@@ -33,7 +33,7 @@
             tidy, and stress-free.
           </p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="#booking">Book an appointment</a>
+            <a class="btn btn--primary" href="#availability">Book an appointment</a>
             <a class="btn btn--ghost" href="#availability">See free times</a>
           </div>
         </div>
@@ -80,77 +80,34 @@
       <section class="section container" id="availability">
         <h2>Available Times</h2>
         <p class="section-intro">
-          Check my available slots in the calendar below. Then use the booking
-          form to request your appointment.
+          Here is my weekly availability. Book your appointment directly on
+          Google Calendar using the button below.
         </p>
 
-        <div class="calendar-wrap">
-          <iframe
-            title="MagiClean Availability Calendar"
-            src="https://calendar.google.com/calendar/embed?src=magicstudentclean%40gmail.com&ctz=UTC"
-            style="border: 0"
-            width="800"
-            height="600"
-            frameborder="0"
-            scrolling="no"
-          ></iframe>
-        </div>
-      </section>
-
-      <section class="section container" id="booking">
-        <h2>Book an Appointment</h2>
-        <p class="section-intro">
-          Fill in your details and preferred time. Your request is sent to the backend and stored in Google Sheets.
-        </p>
-
-        <form id="booking-form" class="booking-form" novalidate>
-          <div class="form-grid">
-            <label>
-              Full name
-              <input type="text" name="name" placeholder="Jane Doe" required />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="jane@email.com" required />
-            </label>
-            <label>
-              Phone
-              <input type="tel" name="phone" placeholder="+1 435 000 0000" required />
-            </label>
-            <label>
-              Apartment address
-              <input type="text" name="address" placeholder="Street, City" required />
-            </label>
-            <label>
-              Preferred date
-              <input type="date" name="date" required />
-            </label>
-            <label>
-              Preferred time
-              <input type="time" name="time" required />
-            </label>
-            <label>
-              Estimated hours
-              <input type="number" min="1" max="10" name="hours" value="2" required />
-            </label>
+        <div class="availability-card availability-layout">
+          <div class="availability-book">
+            <h3>Book an appointment</h3>
+            <a
+              class="btn btn--primary btn--booking"
+              href="https://calendar.google.com/calendar/embed?src=magicstudentclean%40gmail.com&ctz=UTC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book on Google Calendar
+            </a>
           </div>
-
-          <label>
-            Notes
-            <textarea
-              name="notes"
-              rows="4"
-              placeholder="Anything special to clean?"
-            ></textarea>
-          </label>
-
-          <button class="btn btn--primary" type="submit">Send booking request</button>
-          <p id="form-message" class="form-message" aria-live="polite"></p>
-        </form>
-
-        <div class="bookings">
-          <h3>Recent requests sent from this device</h3>
-          <ul id="booking-list"></ul>
+          <div>
+            <h3>Available times</h3>
+            <ul class="availability-list">
+              <li><strong>Monday:</strong> 3pm–9pm</li>
+              <li><strong>Tuesday:</strong> 3pm–9pm</li>
+              <li><strong>Wednesday:</strong> 3pm–9pm</li>
+              <li><strong>Thursday:</strong> 3pm–9pm</li>
+              <li><strong>Friday:</strong> 3pm–9pm</li>
+              <li><strong>Saturday:</strong> 12pm–6pm</li>
+              <li><strong>Sunday:</strong> 10am–6pm</li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -180,7 +137,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
