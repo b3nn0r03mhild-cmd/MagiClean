@@ -9,6 +9,8 @@
       content="MagiClean offers affordable apartment cleaning for Snow College students. View available times in our Google Calendar and book online."
     />
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet" />
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
   </head>
   <body>
     <header class="hero" id="home">
@@ -100,8 +102,13 @@
       <section class="section container" id="booking">
         <h2>Book an Appointment</h2>
         <p class="section-intro">
-          Fill in your details and preferred time. Your request is sent to the backend and stored in Google Sheets.
+          Use the Google booking button for instant scheduling, or fill in the form to send a custom request.
         </p>
+
+        <div class="booking-button-wrap">
+          <p class="booking-button-label">Quick booking with Google Calendar</p>
+          <div id="google-scheduling-button"></div>
+        </div>
 
         <form id="booking-form" class="booking-form" novalidate>
           <div class="form-grid">
@@ -182,5 +189,19 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      window.addEventListener('load', function () {
+        if (!window.calendar?.schedulingButton) {
+          return;
+        }
+
+        calendar.schedulingButton.load({
+          url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3KDdPMu_RtdXlhReQ6ohcwpzUz-niYL7UTW-eNvYh8vrTmRHJerHdNnIGVhPWfTYIR1Lo6GlWp?gv=true',
+          color: '#039BE5',
+          label: 'Book an appointment',
+          target: document.getElementById('google-scheduling-button')
+        });
+      });
+    </script>
   </body>
 </html>
