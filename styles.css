@@ -113,12 +113,6 @@ h1 {
   background: var(--primary-dark);
 }
 
-.btn--booking {
-  font-size: 1.1rem;
-  padding: 1rem 1.6rem;
-  margin-top: 0.4rem;
-}
-
 .btn--ghost {
   border-color: var(--primary);
   color: var(--primary);

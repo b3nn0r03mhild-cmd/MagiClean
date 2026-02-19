@@ -87,14 +87,29 @@
         <div class="availability-card availability-layout">
           <div class="availability-book">
             <h3>Book an appointment</h3>
-            <a
-              class="btn btn--primary btn--booking"
-              href="https://calendar.google.com/calendar/embed?src=magicstudentclean%40gmail.com&ctz=UTC"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Book on Google Calendar
-            </a>
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <link
+              href="https://calendar.google.com/calendar/scheduling-button-script.css"
+              rel="stylesheet"
+            />
+            <script
+              src="https://calendar.google.com/calendar/scheduling-button-script.js"
+              async
+            ></script>
+            <script>
+              (function () {
+                var target = document.currentScript;
+                window.addEventListener('load', function () {
+                  calendar.schedulingButton.load({
+                    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3KDdPMu_RtdXlhReQ6ohcwpzUz-niYL7UTW-eNvYh8vrTmRHJerHdNnIGVhPWfTYIR1Lo6GlWp?gv=true',
+                    color: '#039BE5',
+                    label: 'Book an appointment',
+                    target
+                  });
+                });
+              })();
+            </script>
+            <!-- end Google Calendar Appointment Scheduling -->
           </div>
           <div>
             <h3>Available times</h3>
