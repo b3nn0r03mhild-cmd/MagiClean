@@ -12,12 +12,19 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
   background: var(--bg);
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -115,6 +122,10 @@ h1 {
   padding: 3rem 0;
 }
 
+main {
+  flex: 1;
+}
+
 .section--alt {
   background: #eef4fb;
 }
@@ -127,11 +138,43 @@ h2 {
 .price-card,
 .booking-form,
 .bookings,
-.calendar-wrap {
+.calendar-wrap,
+.availability-card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 0.8rem;
   padding: 1rem;
+}
+
+.availability-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.availability-list li {
+  margin-bottom: 0.45rem;
+}
+
+.availability-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(320px, 1.2fr);
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.availability-layout h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+}
+
+.availability-book {
+  padding-right: 0.6rem;
+}
+
+.availability-book button {
+  font-size: 1.05rem;
+  padding: 0.95rem 1.4rem;
+  border-radius: 0.65rem;
 }
 
 .services-box ul {
@@ -234,6 +277,7 @@ textarea:focus {
   background: #0f1f31;
   color: #f4f8ff;
   padding: 2rem 0;
+  margin-top: auto;
 }
 
 .footer__content {
@@ -257,5 +301,9 @@ textarea:focus {
   .nav {
     flex-direction: column;
     gap: 0.8rem;
+  }
+
+  .availability-layout {
+    grid-template-columns: 1fr;
   }
 }
