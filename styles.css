@@ -1,0 +1,309 @@
+:root {
+  --bg: #f8fbff;
+  --text: #172538;
+  --primary: #1d63ff;
+  --primary-dark: #0d4fd9;
+  --card: #ffffff;
+  --muted: #5f6b7a;
+  --border: #d9e1ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(135deg, #eaf2ff, #f8fbff 60%);
+  padding-bottom: 2.5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-dark);
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.hero__content {
+  max-width: 760px;
+  padding: 1.4rem 0 1rem;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.tag {
+  color: var(--primary-dark);
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn--ghost {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+main {
+  flex: 1;
+}
+
+.section--alt {
+  background: #eef4fb;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.card,
+.price-card,
+.booking-form,
+.bookings,
+.calendar-wrap,
+.availability-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+.availability-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.availability-list li {
+  margin-bottom: 0.45rem;
+}
+
+.availability-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(320px, 1.2fr);
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.availability-layout h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+}
+
+.availability-book {
+  padding-right: 0.6rem;
+}
+
+.availability-book button {
+  font-size: 1.05rem;
+  padding: 0.95rem 1.4rem;
+  border-radius: 0.65rem;
+}
+
+.services-box ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.services-box li {
+  margin-bottom: 0.45rem;
+}
+
+.choose-pricing-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.price-card {
+  text-align: center;
+}
+
+.price-label {
+  margin: 0;
+  font-weight: 600;
+}
+
+.price {
+  margin: 0.2rem 0;
+  font-size: 2rem;
+  color: var(--primary-dark);
+  font-weight: 800;
+}
+
+.benefit-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.benefit-list li {
+  margin-bottom: 0.4rem;
+}
+
+.muted,
+.section-intro {
+  color: var(--muted);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #b7d2ff;
+  border-color: var(--primary);
+}
+
+.form-message {
+  min-height: 1.2rem;
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+
+.form-message.success {
+  color: #157347;
+}
+
+.form-message.error {
+  color: #b42318;
+}
+
+.bookings {
+  margin-top: 1rem;
+}
+
+#booking-list {
+  padding-left: 1.2rem;
+}
+
+.footer {
+  background: #0f1f31;
+  color: #f4f8ff;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+.instagram-link {
+  display: inline-flex;
+  border-radius: 12px;
+}
+
+.instagram-link img {
+  width: 52px;
+  height: 52px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .availability-layout {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,10 @@
+<svg width="420" height="140" viewBox="0 0 420 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="140" rx="16" fill="#F8FBFF"/>
+  <path d="M78 95C112 98 157 98 191 95C168 86 142 78 112 72C98 74 87 82 78 95Z" fill="#1290E8"/>
+  <path d="M111 28C100 42 92 61 88 77C104 84 132 86 162 83C152 62 140 43 125 29C121 25 114 24 111 28Z" fill="#1290E8"/>
+  <path d="M98 78C122 79 148 76 170 68" stroke="#0A6FC0" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="122" cy="49" r="3" fill="white"/>
+  <circle cx="136" cy="62" r="2.5" fill="white"/>
+  <circle cx="107" cy="64" r="2.5" fill="white"/>
+  <text x="205" y="88" fill="#0A3B82" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">MagiClean</text>
+</svg>
